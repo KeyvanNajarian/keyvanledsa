@@ -1,0 +1,440 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>ledsa.core package &mdash; LEDSA  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="ledsa.ledpositions package" href="ledsa.ledpositions.html" />
+    <link rel="prev" title="ledsa.analysis package" href="ledsa.analysis.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> LEDSA
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="ledsa.analysis.html">ledsa.analysis package</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">ledsa.core package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#module-ledsa.core">Module contents</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-ledsa.core.LEDAnalysisData">ledsa.core.LEDAnalysisData module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-ledsa.core.led_helper">ledsa.core.led_helper module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-ledsa.core.ledsa_conf">ledsa.core.ledsa_conf module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-ledsa.core.model">ledsa.core.model module</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="ledsa.ledpositions.html">ledsa.ledpositions package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ledsa.tests.html">ledsa.tests package</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">LEDSA</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>ledsa.core package</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/ledsa.core.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="ledsa-core-package">
+<h1>ledsa.core package<a class="headerlink" href="#ledsa-core-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="module-ledsa.core">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-ledsa.core" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-ledsa.core.LEDAnalysisData">
+<span id="ledsa-core-ledanalysisdata-module"></span><h2>ledsa.core.LEDAnalysisData module<a class="headerlink" href="#module-ledsa.core.LEDAnalysisData" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="ledsa.core.LEDAnalysisData.LEDAnalysisData">
+<em class="property">class </em><code class="sig-prename descclassname">ledsa.core.LEDAnalysisData.</code><code class="sig-name descname">LEDAnalysisData</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">led_id</span></em>, <em class="sig-param"><span class="n">led_array</span></em>, <em class="sig-param"><span class="n">fit_leds</span></em><span class="sig-paren">)</span><a class="headerlink" href="#ledsa.core.LEDAnalysisData.LEDAnalysisData" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt id="ledsa.core.LEDAnalysisData.LEDAnalysisData.get_fit_data_string">
+<code class="sig-name descname">get_fit_data_string</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ledsa.core.LEDAnalysisData.LEDAnalysisData.get_fit_data_string" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="ledsa.core.LEDAnalysisData.LEDAnalysisData.get_main_data_string">
+<code class="sig-name descname">get_main_data_string</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ledsa.core.LEDAnalysisData.LEDAnalysisData.get_main_data_string" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-ledsa.core.led_helper">
+<span id="ledsa-core-led-helper-module"></span><h2>ledsa.core.led_helper module<a class="headerlink" href="#module-ledsa.core.led_helper" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt id="ledsa.core.led_helper.add_search_areas_to_plot">
+<code class="sig-prename descclassname">ledsa.core.led_helper.</code><code class="sig-name descname">add_search_areas_to_plot</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">search_areas</span></em>, <em class="sig-param"><span class="n">ax</span></em>, <em class="sig-param"><span class="n">config</span></em><span class="sig-paren">)</span><a class="headerlink" href="#ledsa.core.led_helper.add_search_areas_to_plot" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="ledsa.core.led_helper.create_fit_result_file">
+<code class="sig-prename descclassname">ledsa.core.led_helper.</code><code class="sig-name descname">create_fit_result_file</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">img_data</span></em>, <em class="sig-param"><span class="n">img_id</span></em>, <em class="sig-param"><span class="n">channel</span></em><span class="sig-paren">)</span><a class="headerlink" href="#ledsa.core.led_helper.create_fit_result_file" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="ledsa.core.led_helper.create_imgs_to_process_file">
+<code class="sig-prename descclassname">ledsa.core.led_helper.</code><code class="sig-name descname">create_imgs_to_process_file</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ledsa.core.led_helper.create_imgs_to_process_file" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="ledsa.core.led_helper.create_needed_directories">
+<code class="sig-prename descclassname">ledsa.core.led_helper.</code><code class="sig-name descname">create_needed_directories</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">channels</span></em><span class="sig-paren">)</span><a class="headerlink" href="#ledsa.core.led_helper.create_needed_directories" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="ledsa.core.led_helper.find_not_analysed_imgs">
+<code class="sig-prename descclassname">ledsa.core.led_helper.</code><code class="sig-name descname">find_not_analysed_imgs</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">channel</span></em><span class="sig-paren">)</span><a class="headerlink" href="#ledsa.core.led_helper.find_not_analysed_imgs" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="ledsa.core.led_helper.find_search_areas">
+<code class="sig-prename descclassname">ledsa.core.led_helper.</code><code class="sig-name descname">find_search_areas</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">image</span></em>, <em class="sig-param"><span class="n">window_radius</span><span class="o">=</span><span class="default_value">10</span></em>, <em class="sig-param"><span class="n">skip</span><span class="o">=</span><span class="default_value">10</span></em>, <em class="sig-param"><span class="n">threshold_factor</span><span class="o">=</span><span class="default_value">0.25</span></em><span class="sig-paren">)</span><a class="headerlink" href="#ledsa.core.led_helper.find_search_areas" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="ledsa.core.led_helper.generate_analysis_data">
+<code class="sig-prename descclassname">ledsa.core.led_helper.</code><code class="sig-name descname">generate_analysis_data</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">img_filename</span></em>, <em class="sig-param"><span class="n">channel</span></em>, <em class="sig-param"><span class="n">search_areas</span></em>, <em class="sig-param"><span class="n">line_indices</span></em>, <em class="sig-param"><span class="n">conf</span></em>, <em class="sig-param"><span class="n">fit_leds</span><span class="o">=</span><span class="default_value">True</span></em>, <em class="sig-param"><span class="n">debug</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">debug_led</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#ledsa.core.led_helper.generate_analysis_data" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="ledsa.core.led_helper.generate_image_infos_csv">
+<code class="sig-prename descclassname">ledsa.core.led_helper.</code><code class="sig-name descname">generate_image_infos_csv</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">config</span></em>, <em class="sig-param"><span class="n">build_experiment_infos</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">build_analysis_infos</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="headerlink" href="#ledsa.core.led_helper.generate_image_infos_csv" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="ledsa.core.led_helper.generate_labeled_led_arrays_plot">
+<code class="sig-prename descclassname">ledsa.core.led_helper.</code><code class="sig-name descname">generate_labeled_led_arrays_plot</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">line_indices</span></em>, <em class="sig-param"><span class="n">search_areas</span></em><span class="sig-paren">)</span><a class="headerlink" href="#ledsa.core.led_helper.generate_labeled_led_arrays_plot" title="Permalink to this definition">¶</a></dt>
+<dd><p>plot the labeled LEDs</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="ledsa.core.led_helper.generate_line_indices_files">
+<code class="sig-prename descclassname">ledsa.core.led_helper.</code><code class="sig-name descname">generate_line_indices_files</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">line_indices</span></em><span class="sig-paren">)</span><a class="headerlink" href="#ledsa.core.led_helper.generate_line_indices_files" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="ledsa.core.led_helper.get_img_id">
+<code class="sig-prename descclassname">ledsa.core.led_helper.</code><code class="sig-name descname">get_img_id</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">img_name</span></em><span class="sig-paren">)</span><a class="headerlink" href="#ledsa.core.led_helper.get_img_id" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="ledsa.core.led_helper.get_img_id_from_time">
+<code class="sig-prename descclassname">ledsa.core.led_helper.</code><code class="sig-name descname">get_img_id_from_time</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">time</span></em><span class="sig-paren">)</span><a class="headerlink" href="#ledsa.core.led_helper.get_img_id_from_time" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="ledsa.core.led_helper.get_img_name">
+<code class="sig-prename descclassname">ledsa.core.led_helper.</code><code class="sig-name descname">get_img_name</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">img_id</span></em><span class="sig-paren">)</span><a class="headerlink" href="#ledsa.core.led_helper.get_img_name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="ledsa.core.led_helper.get_last_img_id">
+<code class="sig-prename descclassname">ledsa.core.led_helper.</code><code class="sig-name descname">get_last_img_id</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ledsa.core.led_helper.get_last_img_id" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="ledsa.core.led_helper.get_time_from_img_id">
+<code class="sig-prename descclassname">ledsa.core.led_helper.</code><code class="sig-name descname">get_time_from_img_id</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">img_id</span></em><span class="sig-paren">)</span><a class="headerlink" href="#ledsa.core.led_helper.get_time_from_img_id" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="ledsa.core.led_helper.load_file">
+<code class="sig-prename descclassname">ledsa.core.led_helper.</code><code class="sig-name descname">load_file</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">filename</span></em>, <em class="sig-param"><span class="n">delim</span><span class="o">=</span><span class="default_value">' '</span></em>, <em class="sig-param"><span class="n">dtype</span><span class="o">=</span><span class="default_value">'float'</span></em>, <em class="sig-param"><span class="n">atleast_2d</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">silent</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="headerlink" href="#ledsa.core.led_helper.load_file" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="ledsa.core.led_helper.match_leds_to_led_arrays">
+<code class="sig-prename descclassname">ledsa.core.led_helper.</code><code class="sig-name descname">match_leds_to_led_arrays</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">search_areas</span></em>, <em class="sig-param"><span class="n">config</span></em><span class="sig-paren">)</span><a class="headerlink" href="#ledsa.core.led_helper.match_leds_to_led_arrays" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="ledsa.core.led_helper.read_file">
+<code class="sig-prename descclassname">ledsa.core.led_helper.</code><code class="sig-name descname">read_file</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">filename</span></em>, <em class="sig-param"><span class="n">channel</span></em>, <em class="sig-param"><span class="n">colordepth</span><span class="o">=</span><span class="default_value">14</span></em><span class="sig-paren">)</span><a class="headerlink" href="#ledsa.core.led_helper.read_file" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a 2D array of channel values depending on the colordepth.
+8bit is default range for JPG. Bayer array is a 2D array where
+all channel values except the selected channel are masked.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="ledsa.core.led_helper.request_config_parameters">
+<code class="sig-prename descclassname">ledsa.core.led_helper.</code><code class="sig-name descname">request_config_parameters</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">config</span></em><span class="sig-paren">)</span><a class="headerlink" href="#ledsa.core.led_helper.request_config_parameters" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-ledsa.core.ledsa_conf">
+<span id="ledsa-core-ledsa-conf-module"></span><h2>ledsa.core.ledsa_conf module<a class="headerlink" href="#module-ledsa.core.ledsa_conf" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="ledsa.core.ledsa_conf.ConfigData">
+<em class="property">class </em><code class="sig-prename descclassname">ledsa.core.ledsa_conf.</code><code class="sig-name descname">ConfigData</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">load_config_file</span><span class="o">=</span><span class="default_value">True</span></em>, <em class="sig-param"><span class="n">img_directory</span><span class="o">=</span><span class="default_value">'.'</span></em>, <em class="sig-param"><span class="n">window_radius</span><span class="o">=</span><span class="default_value">10</span></em>, <em class="sig-param"><span class="n">threshold_factor</span><span class="o">=</span><span class="default_value">0.25</span></em>, <em class="sig-param"><span class="n">num_of_arrays</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">multicore_processing</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">num_of_cores</span><span class="o">=</span><span class="default_value">1</span></em>, <em class="sig-param"><span class="n">reference_img</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">date</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">start_time</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">time_diff_to_image_time</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">time_img</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">img_name_string</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">first_img</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">last_img</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">first_analyse_img</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">last_analyse_img</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">skip_imgs</span><span class="o">=</span><span class="default_value">0</span></em>, <em class="sig-param"><span class="n">skip_leds</span><span class="o">=</span><span class="default_value">0</span></em><span class="sig-paren">)</span><a class="headerlink" href="#ledsa.core.ledsa_conf.ConfigData" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">configparser.ConfigParser</span></code></p>
+<dl class="py method">
+<dt id="ledsa.core.ledsa_conf.ConfigData.get2dnparray">
+<code class="sig-name descname">get2dnparray</code><span class="sig-paren">(</span><em class="sig-param">section</em>, <em class="sig-param">option</em>, <em class="sig-param">num_col=2</em>, <em class="sig-param">dtype=&lt;class 'int'&gt;</em><span class="sig-paren">)</span><a class="headerlink" href="#ledsa.core.ledsa_conf.ConfigData.get2dnparray" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="ledsa.core.ledsa_conf.ConfigData.get_datetime">
+<code class="sig-name descname">get_datetime</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">option</span><span class="o">=</span><span class="default_value">'start_time'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#ledsa.core.ledsa_conf.ConfigData.get_datetime" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="ledsa.core.ledsa_conf.ConfigData.get_start_time">
+<code class="sig-name descname">get_start_time</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ledsa.core.ledsa_conf.ConfigData.get_start_time" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="ledsa.core.ledsa_conf.ConfigData.in_first_img">
+<code class="sig-name descname">in_first_img</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ledsa.core.ledsa_conf.ConfigData.in_first_img" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="ledsa.core.ledsa_conf.ConfigData.in_img_name_string">
+<code class="sig-name descname">in_img_name_string</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ledsa.core.ledsa_conf.ConfigData.in_img_name_string" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="ledsa.core.ledsa_conf.ConfigData.in_img_number_overflow">
+<code class="sig-name descname">in_img_number_overflow</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ledsa.core.ledsa_conf.ConfigData.in_img_number_overflow" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="ledsa.core.ledsa_conf.ConfigData.in_last_img">
+<code class="sig-name descname">in_last_img</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ledsa.core.ledsa_conf.ConfigData.in_last_img" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="ledsa.core.ledsa_conf.ConfigData.in_line_edge_coordinates">
+<code class="sig-name descname">in_line_edge_coordinates</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ledsa.core.ledsa_conf.ConfigData.in_line_edge_coordinates" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="ledsa.core.ledsa_conf.ConfigData.in_line_edge_indices">
+<code class="sig-name descname">in_line_edge_indices</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ledsa.core.ledsa_conf.ConfigData.in_line_edge_indices" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="ledsa.core.ledsa_conf.ConfigData.in_num_of_arrays">
+<code class="sig-name descname">in_num_of_arrays</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ledsa.core.ledsa_conf.ConfigData.in_num_of_arrays" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="ledsa.core.ledsa_conf.ConfigData.in_ref_img">
+<code class="sig-name descname">in_ref_img</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ledsa.core.ledsa_conf.ConfigData.in_ref_img" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="ledsa.core.ledsa_conf.ConfigData.in_time_diff_to_img_time">
+<code class="sig-name descname">in_time_diff_to_img_time</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ledsa.core.ledsa_conf.ConfigData.in_time_diff_to_img_time" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="ledsa.core.ledsa_conf.ConfigData.in_time_img">
+<code class="sig-name descname">in_time_img</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ledsa.core.ledsa_conf.ConfigData.in_time_img" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="ledsa.core.ledsa_conf.ConfigData.load">
+<code class="sig-name descname">load</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ledsa.core.ledsa_conf.ConfigData.load" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="ledsa.core.ledsa_conf.ConfigData.save">
+<code class="sig-name descname">save</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ledsa.core.ledsa_conf.ConfigData.save" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-ledsa.core.model">
+<span id="ledsa-core-model-module"></span><h2>ledsa.core.model module<a class="headerlink" href="#module-ledsa.core.model" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt id="ledsa.core.model.led_model">
+<code class="sig-prename descclassname">ledsa.core.model.</code><code class="sig-name descname">led_model</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">x</span></em>, <em class="sig-param"><span class="n">y</span></em>, <em class="sig-param"><span class="n">x0</span></em>, <em class="sig-param"><span class="n">y0</span></em>, <em class="sig-param"><span class="n">dx</span></em>, <em class="sig-param"><span class="n">dy</span></em>, <em class="sig-param"><span class="n">A</span></em>, <em class="sig-param"><span class="n">alpha</span></em>, <em class="sig-param"><span class="n">wx</span></em>, <em class="sig-param"><span class="n">wy</span></em><span class="sig-paren">)</span><a class="headerlink" href="#ledsa.core.model.led_model" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="ledsa.core.model.target_function">
+<code class="sig-prename descclassname">ledsa.core.model.</code><code class="sig-name descname">target_function</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">params</span></em>, <em class="sig-param"><span class="o">*</span><span class="n">args</span></em><span class="sig-paren">)</span><a class="headerlink" href="#ledsa.core.model.target_function" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="ledsa.ledpositions.html" class="btn btn-neutral float-right" title="ledsa.ledpositions package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="ledsa.analysis.html" class="btn btn-neutral float-left" title="ledsa.analysis package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, CCE.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
